@@ -55,14 +55,18 @@
         width: 1000,
         height: 800,
         autoCenter: true
-        
+        display: "single"   // default
       });
+      if ($(window).width() < 1024) {
+      $("#flipbook").turn("display", "single");
+      }
     });
   </script>
 
 </body>
 
 </html>
+
 
 
 
